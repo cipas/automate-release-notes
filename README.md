@@ -49,4 +49,4 @@ $ conventional-github-releaser -p angular
 - repeat
 - `npm version patch`
 - push ( don't forget --tags; `git push origin BRANCH --tags` | `git push --tags`)
-- `conventional-github-releaser -p angular`
+- `conventional-github-releaser -p angular` | for private repos you need to use `convetional-github-releaser -t OAUTH_TOKEN -p angular`

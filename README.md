@@ -44,7 +44,7 @@ $ conventional-github-releaser -p angular
 For private repos you'll have to create an OAuth Token. If you want you can create an OAuth App but not required.
 
 ```
-curl -u _username_ https://api.github.com/authorizations/clients/:client_id -X PUT -H 'X-GitHub-OTP: *OTPCODE*' -i -d '{"client_secret": "*CLIENT_SECRET*", "scopes": ["repo"], "note": "releaser script"}'
+curl -u [USERNAME] https://api.github.com/authorizations/clients/:client_id -X PUT -H 'X-GitHub-OTP: [OTP CODE]' -i -d '{"client_secret": "[CLIENT_SECRET]", "scopes": ["repo"], "note": "releaser script"}'
 ```
 
 ## Workflow

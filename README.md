@@ -41,10 +41,10 @@ $ cd my-project
 $ conventional-github-releaser -p angular
 ```
 
-For private repos you'll have to create an OAuth Token. If you want you can create an OAuth App but not required.
+For private repos you'll have to create an OAuth Token. If your organization requires 2fa you'll need your OTP Code. One way to get it is to try to login to your github organization and you'll receive the auth code by sms or through the app.
 
 ```
-curl -u [USERNAME] https://api.github.com/authorizations/clients/:client_id -X PUT -H 'X-GitHub-OTP: [OTP CODE]' -i -d '{"client_secret": "[CLIENT_SECRET]", "scopes": ["repo"], "note": "releaser script"}'
+curl -u [USERNAME] -X POST https://api.github.com/authorizations -d '{"scopes": ["public_repo"], "note": "Conventional Releaser Private"}' -H 'X-GitHub-OTP: [OTP CODE]'
 ```
 
 ## Workflow

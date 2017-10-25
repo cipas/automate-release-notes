@@ -6,7 +6,7 @@
 2. conventional-github-releaser
 
 ### 1. Install commitizen and adapter, usage.
-**Note**: If you already have commitizen setup go to number *[2](#workflow)*
+**Note**: If you already have commitizen setup go to number *step [2](#workflow)*
 
 ```
 $ npm install -g commitizen
